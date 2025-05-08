@@ -150,7 +150,7 @@ const Skills = () => {
                     animate={isInView ? { width: skill.level } : { width: 0 }}
                     transition={{ 
                       duration: 1.8, 
-                      ease: [0.22, 1, 0.36, 1], // Custom cubic bezier for spring-like effect
+                      ease: "easeOut", 
                       delay: 0.2 + index * 0.1
                     }}
                   >
@@ -202,7 +202,7 @@ const Skills = () => {
                     animate={isInView ? { width: skill.level } : { width: 0 }}
                     transition={{ 
                       duration: 1.8, 
-                      ease: [0.22, 1, 0.36, 1],
+                      ease: "easeOut",
                       delay: 0.2 + (index + 6) * 0.1
                     }}
                   >

@@ -131,11 +131,9 @@ const Navbar = () => {
             animate="visible"
             variants={logoVariants}
           >
-            <Link href="/">
-              <a className="font-poppins text-xl font-bold gradient-text">
+            <a href="/" className="font-poppins text-xl font-bold gradient-text">
                 Balaji C
-              </a>
-            </Link>
+            </a>
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-8">
