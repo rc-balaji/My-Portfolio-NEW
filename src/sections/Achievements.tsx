@@ -60,7 +60,9 @@ const Achievements = () => {
               <div className="inline-block p-3 rounded-full bg-blue-100 dark:bg-blue-900/30 text-primary mb-4">
                 {getAchievementIcon(index)}
               </div>
-              <h3 className="text-xl font-semibold mb-2">{achievement.title || achievement.name}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                {'title' in achievement ? achievement.title : achievement.name}
+              </h3>
               <p className="text-gray-500 dark:text-gray-500 mb-3">{achievement.year}</p>
               <p className="text-gray-600 dark:text-gray-400">
                 {achievement.description}

@@ -10,6 +10,11 @@ const Skills = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
   
+  // Initialize the ref array
+  useEffect(() => {
+    progressRefs.current = progressRefs.current.slice(0, skills.length);
+  }, [skills.length]);
+
   // GSAP animations for skill labels
   useEffect(() => {
     if (!isInView || !titleRef.current) return;
@@ -144,7 +149,7 @@ const Skills = () => {
                   <div className="absolute inset-0 w-full h-full bg-gray-200/20 dark:bg-gray-700/20 rounded-full overflow-hidden" />
                   
                   <motion.div 
-                    ref={el => progressRefs.current[index] = el}
+                    ref={(el) => { progressRefs.current[index] = el; }}
                     className="h-full rounded-full bg-gradient-to-r from-[hsl(var(--gradient-start))] to-[hsl(var(--gradient-end))] relative group-hover:shadow-[0_0_15px_rgba(var(--primary),0.5)] transition-shadow duration-300"
                     initial={{ width: 0 }}
                     animate={isInView ? { width: skill.level } : { width: 0 }}
@@ -177,7 +182,7 @@ const Skills = () => {
           <div className="space-y-8">
             {skills.slice(6).map((skill, index) => (
               <motion.div 
-                key={index} 
+                key={index + 6} 
                 className="skill-item group hover-lift"
                 variants={skillItemVariants}
                 custom={index + 6}
@@ -196,7 +201,7 @@ const Skills = () => {
                   <div className="absolute inset-0 w-full h-full bg-gray-200/20 dark:bg-gray-700/20 rounded-full overflow-hidden" />
                   
                   <motion.div 
-                    ref={el => progressRefs.current[index + 6] = el}
+                    ref={(el) => { progressRefs.current[index + 6] = el; }}
                     className="h-full rounded-full bg-gradient-to-r from-[hsl(var(--gradient-start))] to-[hsl(var(--gradient-end))] relative group-hover:shadow-[0_0_15px_rgba(var(--primary),0.5)] transition-shadow duration-300"
                     initial={{ width: 0 }}
                     animate={isInView ? { width: skill.level } : { width: 0 }}
