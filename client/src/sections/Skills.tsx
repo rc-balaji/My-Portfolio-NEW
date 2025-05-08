@@ -1,10 +1,10 @@
 import { useRef, useEffect } from 'react';
-import portfolioData from '@/data/portfolio-data';
+import myData from '@/data/mydata';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import gsap from 'gsap';
 
 const Skills = () => {
-  const { skills } = portfolioData;
+  const { skills } = myData;
   const sectionRef = useRef<HTMLElement>(null);
   const progressRefs = useRef<(HTMLDivElement | null)[]>([]);
   const titleRef = useRef<HTMLHeadingElement>(null);
