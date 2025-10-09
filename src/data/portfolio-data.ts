@@ -110,7 +110,7 @@ const portfolioData: PortfolioData = {
     title: "Software Engineer",
     tagline: "Building Scalable and Efficient Applications",
     bio: "A passionate software engineer specializing in web development, backend systems, and interactive UI/UX.",
-    profile_picture: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+    profile_picture: "https://media.licdn.com/dms/image/v2/D5603AQG5tVFNal3erg/profile-displayphoto-shrink_400_400/B56ZmKbVbfJsAg-/0/1758964048532?e=1762992000&v=beta&t=YSnIltZXvNAIk1g1orx3-hZwvjVMIyut4-iE3mxherc",
     social_links: {
       github: "https://github.com/rc-balaji",
       linkedin: "https://www.linkedin.com/in/rc-balaji-5a848b248/",
