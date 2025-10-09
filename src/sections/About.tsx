@@ -164,7 +164,7 @@ const About = () => {
               {/* Main image */}
               <img 
                 ref={imageRef}
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=450" 
+                src="https://media.licdn.com/dms/image/v2/D5603AQG5tVFNal3erg/profile-displayphoto-shrink_400_400/B56ZmKbVbfJsAg-/0/1758964048532?e=1762992000&v=beta&t=YSnIltZXvNAIk1g1orx3-hZwvjVMIyut4-iE3mxherc" 
                 alt="Balaji working on code" 
                 className="relative rounded-lg shadow-lg z-10 hover-lift glass-card p-2" 
               />
