@@ -107,7 +107,7 @@ export interface PortfolioData {
 const portfolioData: PortfolioData = {
   personal_info: {
     name: "Balaji C",
-    title: "Software Engineer",
+    title: "Software Development Engineer",
     tagline: "Building Scalable and Efficient Applications",
     bio: "A passionate software engineer specializing in web development, backend systems, and interactive UI/UX.",
     profile_picture: "https://media.licdn.com/dms/image/v2/D5603AQG5tVFNal3erg/profile-displayphoto-shrink_400_400/B56ZmKbVbfJsAg-/0/1758964048532?e=1762992000&v=beta&t=YSnIltZXvNAIk1g1orx3-hZwvjVMIyut4-iE3mxherc",
